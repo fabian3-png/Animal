@@ -39,10 +39,13 @@ class Program
 
         // Crear un Perro
         Perro miPerro = new Perro("Rex", 3, "Labrador");
-        miPerro.MostrarInfo();        // hereda MostrarInfo de Animal
-        miPerro.HacerSonido();        // Rex dice: ¡Guau!
-        miPerro.Buscar();             // Rex está buscando algo...
+        miPerro.MostrarInfo();     
 
         Console.WriteLine("Raza: " + miPerro.Raza);
+
+        Perro toño = new Perro("toño", 5, "Husky");
+        toño.MostrarInfo();     
+
+        Console.WriteLine("Raza: " + toño.Raza);
     }
 }
